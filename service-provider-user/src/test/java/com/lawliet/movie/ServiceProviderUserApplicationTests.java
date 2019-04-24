@@ -1,4 +1,4 @@
-package com.lawliet.cloud;
+package com.lawliet.movie;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ServiceConsumerMovieApplicationTests {
+public class ServiceProviderUserApplicationTests {
 
     @Test
     public void contextLoads() {

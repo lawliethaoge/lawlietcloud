@@ -1,4 +1,4 @@
-package com.lawliet.cloud.entity;
+package com.lawliet.user.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

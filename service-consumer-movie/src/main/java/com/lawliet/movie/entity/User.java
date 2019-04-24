@@ -1,4 +1,4 @@
-package com.lawliet.cloud.entity;
+package com.lawliet.movie.entity;
 
 import lombok.Data;
 
