@@ -1,0 +1,24 @@
+server:
+  port: 65379
+spring:
+  application:
+    name: service-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: service-provider-user
+    hostname: service-provider-user
+  #    instance-id: ${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+
+  client:
+    service-url:
+      defaultZone: http://localhost:65377/eureka/

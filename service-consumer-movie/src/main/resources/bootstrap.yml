@@ -1,0 +1,12 @@
+server:
+  port: 65378
+spring:
+  application:
+    name: service-consumer-movie
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+  client:
+    service-url:
+      defaultZone: http://localhost:65377/eureka/

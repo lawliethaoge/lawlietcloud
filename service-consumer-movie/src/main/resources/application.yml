@@ -8,5 +8,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:65377/eureka/
-  instance:
-    hostname: service-consumer-movie

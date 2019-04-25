@@ -1,7 +1,9 @@
 package com.lawliet.movie.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -9,7 +11,8 @@ import java.math.BigDecimal;
  * 2019/4/21 20:48
  */
 @Data
-public class User {
+@JsonIgnoreProperties(value = { "hibernateLazyInitializer", "handler" })
+public class User implements Serializable {
     private Long id;
     private String username;
     private String name;
