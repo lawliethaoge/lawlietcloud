@@ -1,6 +1,8 @@
 server:
   port: 65379
 spring:
+  application:
+    name: service-provider-user
   jpa:
     generate-ddl: false
     show-sql: true
@@ -17,3 +19,11 @@ logging:
     org.hibernate: info
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.hibernate.type.descriptor.sql.BasicExtractor: trace
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:65377/eureka/
+
+  instance:
+    hostname: service-provider-user
